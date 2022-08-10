@@ -1,0 +1,207 @@
+body {
+    background-color:#8b9aa5;
+    padding:100px;
+}
+h1 {
+    color: white;
+    font-family: Arial;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes circle {
+  from {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes inner-circle {
+  from {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes circle {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes inner-circle {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+#dataKeyGraphic {
+  height: 406px;
+  margin: 0 auto;
+  position: relative;
+  width: 940px;
+}
+#circle {
+    background: #8b9aa5;
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 370px;
+  position: absolute;
+  width: 370px;
+  z-index: 3;
+}
+#rotatorWrapper {
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+  width: 350px;
+}
+#rotator {
+  -moz-animation: circle 25s linear infinite;
+  -o-animation: circle 25s linear infinite;
+  -webkit-animation: circle 25s linear infinite;
+  animation: circle 25s linear infinite;
+  font-size: 10px;
+  height: 350px;
+  line-height: 1;
+  margin: 0 auto;
+  position: relative;
+  width: 350px;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+#rotator > div {
+  cursor: pointer;
+  -moz-animation: inner-circle 25s linear infinite;
+  -o-animation: inner-circle 25s linear infinite;
+  -webkit-animation: inner-circle 25s linear infinite;
+  animation: inner-circle 25s linear infinite;
+}
+#rotator > div > img {
+  display: block;
+  margin: 0 auto;
+}
+#rotator > div > img:hover,
+#rotator > div > img:focus {
+  -webkit-filter: opacity(0.5);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+#rotator > div#drinkIcon img,
+#rotator > div#clockIcon img,
+#rotator > div#moneyIcon2 img,
+#rotator > div#percentIcon img {
+  margin: 4px auto 0;
+}
+#rotator > div#foodIcon img {
+  margin: 5px auto 0;
+}
+#rotator > div#peopleIcon img,
+#rotator > div#calculatorIcon img {
+  margin: 8px auto 0;
+}
+#rotator > div#moneyIcon img {
+  margin: 10px auto 0;
+}
+#rectangle {
+  background-color: ##8b9aa5;
+  border: 1px solid white;
+  height: 136px;
+  left: 215px;
+  position: absolute;
+  top: 118px;
+  width: 722px;
+  z-index: 1;
+}
+#rectangle > div {
+  
+  display: block;
+  display: none;
+  margin: 45px 0 0;
+  position: absolute;
+}
+#bucket {
+  left: 425px;
+  padding-top: 140px;
+  position: absolute;
+  top: 10px;
+  width: 513px;
+  z-index: 2;
+}
+#bucket > div {
+  height: 170px;
+  float: left;
+  margin-right: 45px;
+  position: relative;
+  width: 141px;
+}
+.bucket-inner {
+  background-color: #8b9aa5;
+  box-shadow: 1px 1px 1px white;
+  height: 78px;
+  margin-top: 104px;
+}
+#bucket > div#payroll {
+  margin-right: 0;
+}
+#bucket > div#accounting #calculatorIcon {
+  left: 58px;
+}
+#bucket > div#inventory #foodIcon {
+  left: 57px;
+}
+#bucket > div#inventory #drinkIcon {
+  left: 54px;
+}
+#bucket > div .icon {
+    
+  display: none;
+  left: 52px;
+  position: absolute;
+  top: 16px;
+  z-index: 1;
+}
+#bucket > div .text {
+  position: absolute;
+  top: 158px;
+  width: 144px;
+  z-index: 2;
+}
+#bucket > div .text h5 {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  font-family: Arial;
+}
+
+.icon {
+background-color:slategrey;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}

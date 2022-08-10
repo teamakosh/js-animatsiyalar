@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/9-dars.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="main.processed.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1 class="l-heading anim1">
+          <span> LOCAL BURGERS</span><span> DONE RIGHT</span>
+        </h1>
+        <p class="sub-title anim1">
+          Join us for your next meal. We get juices flowing.
+        </p>
+        <a href="#" class="btn anim1">OUR MENU</a>
+      </div>
+    </main>
+
+    <aside>
+      <img src="img/download.png" class="cofee" alt="" />
+    </aside>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script>
+      const testDesc = document.querySelector(".description");
+      const imageDesc = document.querySelector(".photo-descriptive");
+      const cofee = document.querySelector(".cofee");
+      const title = document.querySelector(".l-heading");
+
+      const tl = gsap.timeline({ defaults: { duration: 1 } });
+      tl.from(".anim1", { y: -50, opacity: 0, stagger: 0.4 })
+        .from("aside", { backgroundPosition: "200px", opacity: 0 }, "-=1")
+        .from(
+          cofee,
+          {
+            y: 20,
+            opacity: 0
+          },
+          "-=0.2"
+        );
+
+      document.querySelector(".btn").addEventListener("click", () => {
+        tl.reversed() ? tl.play() : tl.reverse();
+      });
+      // .to(rule, { cssRule: { scaleY: 0 } })
+    </script>
+  </body>
+</html>

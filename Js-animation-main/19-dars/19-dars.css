@@ -1,0 +1,17 @@
+body {
+    position: relative;  
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .icon-container-svg--toggle-to-x-circular-spin {
+    opacity: 0;
+    width: 9rem;
+    height: 9rem;
+    visibility: hidden;
+  }
+  
+  .icon-root-svg--toggle-to-x-circular-spin {
+    stroke: currentColor;
+  }
+  

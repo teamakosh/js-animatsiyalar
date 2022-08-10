@@ -1,0 +1,38 @@
+.clock{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: linear-gradient(155deg, #0057e6, #0068ff);
+    box-shadow: 5px 5px 8px #002766,
+                -5px -5px 18px #009bff;
+    position: relative;
+}
+.clock::before{
+    content: "";
+    position: absolute;
+    height: calc(50% - 10px);
+    top: 50%;
+    left: 50%;
+    border: 1px solid #fff;
+    transform-origin: 100% 0%;
+    animation: clock 60s infinite steps(60);
+}
+.clockroll{
+    border: 1px solid blue;
+    width: 220px;
+    height: 220px;
+    background-color: #0068ff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px #002766,
+    -5px -5px 18px #009bff;
+
+}
+@keyframes clock{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

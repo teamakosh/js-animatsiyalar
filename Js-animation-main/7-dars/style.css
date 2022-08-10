@@ -1,0 +1,28 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%) translateY(-50%);
+}
+.btn1
+{
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    color: green;
+    font-size: 20px;
+}   
+.btn2
+{
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    color: red;
+    font-size: 20px;
+}
